@@ -1,0 +1,64 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+import random
+
+human_choice = int(input("what do you choose? 0 for rock, 1 paper & 2 for scissors. \n"))
+
+computer_choice = random.randint(0,2)
+
+#Print human choice:
+if human_choice == 0:
+  print(rock)
+elif human_choice == 1:
+  print(paper)
+else:
+  print(scissors)
+    
+#Print computer random choice:
+if computer_choice == 0:
+  print(f"{'computer chose'} \n{rock}")
+elif computer_choice == 1:
+  print(f"{'computer chose'} \n{paper}")
+else:
+  print(f"{'computer chose'} \n{scissors}")
+
+#Game result logic:
+if human_choice==0 and computer_choice==2:
+  print("You won")
+elif human_choice==2 and computer_choice==1:
+  print("You won")
+elif human_choice==1 and computer_choice==0:
+  print("You won")
+elif human_choice==0 and computer_choice==0:
+  print("Tie")
+elif human_choice==1 and computer_choice==1:
+  print("Tie")
+elif human_choice==2 and computer_choice==2:
+  print("Tie")
+else:
+  print("You lost the game")
