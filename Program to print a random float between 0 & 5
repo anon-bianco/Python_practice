@@ -1,0 +1,7 @@
+import random
+
+random_integer = random.randint(0, 5)
+
+random_float = random.random()
+n = float(random_integer)+float(random_float)
+print(n)
