@@ -1,0 +1,4 @@
+a=0
+for number in range (2,102,2):
+    a+=number
+print(a)
