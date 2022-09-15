@@ -1,0 +1,4 @@
+a = 0
+for number in range (0,101):
+  a += number
+print(a)  
